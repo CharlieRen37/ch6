@@ -1,8 +1,11 @@
 public class rootGuess{
-	public class void main(String[] args){
+	public static void main(String[] args){
 		squareRoot(36.0);
 	}
 	public static double squareRoot(double n){
-		for(double i = 18.0; 
+		double i;
+		for(i = n/2; Math.abs(i-(i+n/i)/2)>=0.0001; i=((i+n/i)/2)){
+		}		
+		return (i);
 	}
 }
